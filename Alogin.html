@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin Login Page</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <link rel="stylesheet" href="lstyle.css">
+        <div id="login-div" class="main-div" style="display: block;">
+            <h3>Admin Login Page</h3>
+            <input type="email" placeholder="email..." id="email_field"/>
+            <input type="password" placeholder="password..." id="password_field"/>
+            <button onclick="Alogin()">Log In</button>
+            <a href="login.html">Not an admin? Click here </a>
+        </div>
+        <br>
+        <div id="user-div" class="loggedin-div" style="display: none;">
+            <h3>Welcome Admin</h3>
+            <p id="user_para">You are now logged in...</p>
+          
+        
+          <p> .</p> 
+          <a href="login.html">User Login page</a>
+            <button onclick="Alogout()">Admin Log Out</button>
+            <!-- <p>.</p> -->
+        </div>
+
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+ <script src="JS/bus.js"></script>
+    </body>
+</html>

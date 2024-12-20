@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.2.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/ii-128x82.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>BusSelect | AG</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section class="menu menu2 cid-shX90xepxs" once="menu" id="menu2-2u">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/download-96x96.png" alt="Home" style="height: 3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7" href="index.html">Home</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="Profilemain.html">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="Bdetails.html">BusDetails</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="Aboutus.html">AboutUs</a>
+                    </li>
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" onclick="logOut()" href="logout.html">LogOut</a></div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<section class="content9 cid-sgYcGoeQFt" id="content9-25">
+  
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="counter-container col-md-12 col-lg-10">
+                
+                <div class="mbr-text mbr-fonts-style display-7"><p>1. Select your Bus-type.</p><p>2.&nbsp; Then Select your Bus-Route From the below</p><p>3. Head to the Payment Section If seats are available&nbsp;</p></div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <br>
+  <br><br><br>
+  <section id="select">
+      <div style="padding-left: 200px;">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <label for="A">College</label>
+    <input name="q1" id="bcollege"type="radio" value="A" onchange="showStuff('A', this); return false;" />
+   
+    <br>
+  
+    <div id="A" style="display:none">
+      
+     <!-- <input type="radio" id="CMehedipatnam" name="Bus_type" value="CMehedipatnam">
+    <label for="CMehedipatnam">College-Mehedipatnam</label><br> -->
+   
+    </div>
+    <br>
+    <label for="B">RTC</label>
+    <input name="q1" type="radio" id="brtc" value="B" onchange="showStuff('B', this); return false;" />
+   
+    <br>
+  
+    <div id="B" style="display:none">
+  
+      <!-- <input type="radio" id="RMehedipatnam" name="Bus_type" value="RMehedipatnam">
+    <label for="RMehedipatnam">RTC-Mehedipatnam</label><br> -->
+    </div>
+    <script>
+    function showStuff(id, btn) {
+      $("#A,#B").hide(); // hide both each time
+  
+      document.getElementById(id).style.display = 'block';
+  
+    }
+    </script>
+    </div>
+  </section>
+  <!-- <section class="mbr-section content8 cid-sgwV7fj3uW" id="content8-1t">
+  
+  
+  
+      <div class="container">
+          <div class="media-container-row title">
+              <div class="col-12 col-md-8">
+                  <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" onclick="seat()" href="#"><span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont mbr-iconfont-btn"></span>Pay</a></div>
+              </div>
+          </div>
+      </div>
+  </section> -->
+  
+  <section class="content12 cid-sgYcpDbTeC" id="content12-24">
+      
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-10">
+                <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+  
+                    <input type="hidden" name="cmd" value="_cart">
+                    <input type="hidden" name="upload" value="1">
+                    <input type="hidden" name="business" value="fakebusiness1264@gmail.com">
+                    
+                    <input type="hidden" name="item_name_1" value="">
+                    <input type="hidden" name="amount_1" value="11000">
+                    <input type="hidden" name="quantity_1" value="1">
+                    
+                 
+                  <div class="mbr-section-btn align-center"><a class="btn btn-primary display-4" href="businfo.html">Previous</a>
+                      <input type="submit"  class="btn btn-primary display-4"  value="Payment" onclick="seat()" href="">Pay</div>
+                    </form>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+
+
+<section once="footers" class="cid-shWZBFGkjR" id="footer7-2n">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="row row-links">
+                <ul class="foot-menu">
+                    
+                    
+                    
+                    
+                    
+                <li class="foot-menu-item mbr-fonts-style display-7">Family Sites&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</li><li class="foot-menu-item mbr-fonts-style display-7"><a href="https://www.vce.ac.in/" class="text-primary">VCE</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li></ul>
+            </div>
+            
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    © Copyright 2020 AGRenewal - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/t" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Start a website - <a href="https://mobirise.site/w" style="color:#aaa;">Check this</a></p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden"> -->
+
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+    <!-- <script src="JS/index.js"></script> -->
+    <script src="JS/busselect.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>

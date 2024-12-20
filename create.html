@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SignUp Page</title>
+        <link rel="stylesheet" href="lstyle.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="signup-div" class="signup-main-div">
+            <h3>SignUP Page</h3>
+            
+            <input type="text" placeholder="First Name..." id="fname" required/>
+            <input type="text" placeholder="Middle Name..." id="mname"/>
+            <input type="text" placeholder="Last Name..." id="lname" required/>
+            <input type="number" placeholder="roll no..." id="rollno" required/>
+            <br>
+            <!-- <label><b>Bus Type:<br><br></b></label>
+            <div style="float: left; width: 50%;">
+            <label for="Exclusive">Exclusive</label>
+            <input type="radio" id="Exclusive" name="bus_type" value="exclusive">
+            
+            </div> -->
+            <!-- <div style="float: right; width: 50%;">
+            <label for="CollegeBus">College Bus</label>
+            <input type="radio" id="CollegeBus" name="bus_type" value="college_bus">
+            
+            </div> -->
+            <input type="email" placeholder="email..." id="user_email" required/>
+            <input type="password" placeholder="password..." id="user_password" required/>
+            <label>confirm password:
+            <input type="password" name="confirm_password" id="confirm_password" onchange="check()"/> 
+            <span id='message'></span>
+            <button onclick="signUp()">Create Account</button>
+            <a href="login.html">LogIn</a>
+            
+        </div>
+
+
+               <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+    <script src="/JS/index.js"></script>
+    </body>
+</html>
